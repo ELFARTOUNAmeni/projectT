@@ -1,0 +1,20 @@
+<!-- app.component.html -->
+<body>
+<div class="app-container" >
+  <!-- src/app/app.component.html -->
+  <div *ngIf="data">
+    
+    <p>{{ data.message }}</p>
+  </div>
+  <div *ngIf="!data">
+    
+    <p>Loading data...</p>
+  </div>
+  
+  
+
+  <div class="content" >
+    <router-outlet></router-outlet>
+  </div>
+</div>
+</body>
